@@ -1,11 +1,11 @@
 ﻿#include "QtGuiTest.h"
-
+#include "EventLabel.h"
 QtGuiTest::QtGuiTest(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
 
-	//1
+	//open
 	openAction = new QAction(tr("&Open"),this);
 	openAction->setShortcut(QKeySequence::Open);
 	openAction->setStatusTip(tr("open a file"));
@@ -15,12 +15,19 @@ QtGuiTest::QtGuiTest(QWidget *parent)
 	QMenu *file = menuBar()->addMenu(tr("&File"));
 	file->addAction(openAction);
 
+	//Input
 	this->menuBar()->addAction(tr("Input"), this, SLOT(Input()));//顶级菜单添加槽
 	
+	//MouesEvent
+	this->menuBar()->addAction(tr("MouseEvent"), this, SLOT(MouseEvent()));
+
+	//exit
+	this->menuBar()->addAction(tr("Exit"), this, SLOT(Exit()));
+
 	QToolBar *toolBar = addToolBar(tr("&File"));
 	toolBar->addAction(openAction);
 
-	//2
+	//color
 	openAction_Color = new QAction(tr("Color"), this);
 	//openAction_Color->setShortcut(QKeySequence::Open);
 	openAction_Color->setStatusTip(tr("open a file"));
@@ -141,4 +148,17 @@ void QtGuiTest::Input()
 			QMessageBox::Yes | QMessageBox::No,
 			QMessageBox::Yes);
 	}
+}
+
+void QtGuiTest::MouseEvent()
+{
+	EventLabel *label = new EventLabel;
+	label->setWindowTitle("MouseEvent Demo");
+	label->resize(400, 200);
+	label->show();
+}
+
+void QtGuiTest::Exit()
+{
+	qApp->quit();
 }

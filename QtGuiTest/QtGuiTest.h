@@ -25,6 +25,8 @@ private slots:
 	void critical();
 	void imgMessage();
 	void Input();
+	void MouseEvent();
+	void Exit();
 private:
 	Ui::QtGuiTestClass ui;
 
