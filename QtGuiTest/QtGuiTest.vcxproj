@@ -113,17 +113,17 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="guitest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="QtGuiTest.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="guitest.h" />
+    <QtMoc Include="QtGuiTest.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="guitest.ui" />
+    <QtUic Include="QtGuiTest.ui" />
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="guitest.qrc" />
+    <QtRcc Include="QtGuiTest.qrc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

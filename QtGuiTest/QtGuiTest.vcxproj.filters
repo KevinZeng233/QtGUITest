@@ -33,22 +33,22 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="guitest.cpp">
+    <ClCompile Include="QtGuiTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="guitest.h">
+    <QtMoc Include="QtGuiTest.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="guitest.ui">
+    <QtUic Include="QtGuiTest.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="guitest.qrc">
+    <QtRcc Include="QtGuiTest.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
   </ItemGroup>
