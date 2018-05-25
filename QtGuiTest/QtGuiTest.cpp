@@ -59,7 +59,7 @@ QtGuiTest::QtGuiTest(QWidget *parent)
 	statusBar()->setStyleSheet(QString("QStatusBar::item{border: 0px}"));//消除底部竖线
 
 	//painted_msg
-	this->menuBar()->addAction(tr("painted"), this, SLOT(Painted_msg()));
+	this->menuBar()->addAction(tr("Painted"), this, SLOT(Painted_msg()));
 }
 
 void QtGuiTest::open()
