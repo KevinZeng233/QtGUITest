@@ -1,5 +1,6 @@
 ﻿#include "QtGuiTest.h"
 #include "EventLabel.h"
+#include "PaintedWidget.h"
 QtGuiTest::QtGuiTest(QWidget *parent)
 	: QMainWindow(parent)
 {
@@ -57,6 +58,8 @@ QtGuiTest::QtGuiTest(QWidget *parent)
 	statusBar()->addWidget(msgLabel);
 	statusBar()->setStyleSheet(QString("QStatusBar::item{border: 0px}"));//消除底部竖线
 
+	//painted_msg
+	this->menuBar()->addAction(tr("painted"), this, SLOT(Painted_msg()));
 }
 
 void QtGuiTest::open()
@@ -163,6 +166,12 @@ void QtGuiTest::MouseEvent()
 void QtGuiTest::Exit()
 {
 	qApp->quit();
+}
+
+void QtGuiTest::Painted_msg()
+{
+	PaintedWidget *pain = new PaintedWidget();
+	pain->show();
 }
 
 void QtGuiTest::keyPressEvent(QKeyEvent *event)

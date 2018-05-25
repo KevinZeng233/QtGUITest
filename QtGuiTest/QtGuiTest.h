@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_QtGuiTest.h"
@@ -22,11 +22,12 @@ public:
 private slots:
 	void open();
 	void openColor();
-	void critical();
+	void critical();//弹出框
 	void imgMessage();
 	void Input();
 	void MouseEvent();
 	void Exit();
+	void Painted_msg();//画板
 protected:
 	virtual bool event(QEvent *event);
 	virtual void keyPressEvent(QKeyEvent *event);
@@ -38,4 +39,5 @@ private:
 	QAction *openAction_Color;
 	QAction *openAction_critical;
 	QAction *action_imgMessageBox;
+	QAction *painted_msg;
 };

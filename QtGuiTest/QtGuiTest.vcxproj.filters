@@ -39,6 +39,9 @@
     <ClCompile Include="EventLabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PaintedWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtGuiTest.h">
@@ -57,6 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EventLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintedWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
