@@ -44,6 +44,8 @@ QtGuiTest::QtGuiTest(QWidget *parent)
 
 	//action_imgMessageBox
 	action_imgMessageBox = new QAction(tr("imgMessage"), this);
+	//action_imgMessageBox->setShortcut(QKeySequence::Bold);
+	action_imgMessageBox->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_A));//快捷键组合
 	file->addAction(action_imgMessageBox);
 	connect(action_imgMessageBox, SIGNAL(triggered()), this, SLOT(imgMessage()));
 
@@ -161,4 +163,26 @@ void QtGuiTest::MouseEvent()
 void QtGuiTest::Exit()
 {
 	qApp->quit();
+}
+
+void QtGuiTest::keyPressEvent(QKeyEvent *event)
+{
+
+}
+
+bool QtGuiTest::event(QEvent * event)
+{
+	//action_imgMessageBox->setShortcut(QKeySequence::Bold);
+	if (event->type() == QEvent::KeyPress) {
+		QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+		if (keyEvent->key() == QKeySequence::Bold) 
+		{
+			return false;
+		}
+		
+		qDebug("key:%d",keyEvent->key());
+	}
+
+	return QWidget::event(event);
+
 }

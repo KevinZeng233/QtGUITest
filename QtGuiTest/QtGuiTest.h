@@ -27,6 +27,9 @@ private slots:
 	void Input();
 	void MouseEvent();
 	void Exit();
+protected:
+	virtual bool event(QEvent *event);
+	virtual void keyPressEvent(QKeyEvent *event);
 private:
 	Ui::QtGuiTestClass ui;
 

@@ -1,4 +1,5 @@
-﻿  EventLabel.cpp
+﻿  Moc'ing QtGuiTest.h...
+  moc_QtGuiTest.cpp
   QtGuiTest.cpp
   main.cpp
   QtGuiTest.vcxproj -> D:\git\QtGUITest\x64\Debug\QtGuiTest.exe

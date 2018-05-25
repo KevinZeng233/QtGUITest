@@ -1,0 +1,3 @@
+QtGuiTest.qrc|"D:\git\QtGUITest\QtGuiTest\QtGuiTest.qrc" -o ".\GeneratedFiles\qrc_QtGuiTest.cpp" --name QtGuiTest
+QtGuiTest.ui|"D:\git\QtGUITest\QtGuiTest\QtGuiTest.ui" -o ".\GeneratedFiles\ui_QtGuiTest.h"
+QtGuiTest.h|"D:\git\QtGUITest\QtGuiTest\QtGuiTest.h" -o ".\GeneratedFiles\Debug\moc_QtGuiTest.cpp" "-I.\GeneratedFiles" "-I." "-ID:\qt_5.10.1_x64\include" "-I.\GeneratedFiles\Debug" "-ID:\qt_5.10.1_x64\include\QtCore" "-ID:\qt_5.10.1_x64\include\QtGui" "-ID:\qt_5.10.1_x64\include\QtANGLE" "-ID:\qt_5.10.1_x64\include\QtWidgets" -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
