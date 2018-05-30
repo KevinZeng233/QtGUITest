@@ -73,4 +73,6 @@ void PaintedWidget::paintEvent(QPaintEvent *event)
 	QBitmap bitmap2("Resources/sogo.png");
 	painter.drawPixmap(10, 140, 128, 128, pixmap2);
 	painter.drawPixmap(140, 140, 128, 128, bitmap2);
+
+	//测试
 }
